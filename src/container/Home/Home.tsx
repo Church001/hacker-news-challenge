@@ -36,7 +36,6 @@ export const Home = () => {
     React.useEffect(() => {
         const fetchNewsList = async () => {
             try {
-                console.log("RUNNIN")
                 const listOfIds = await axios.get('https://hacker-news.firebaseio.com/v0/topstories.json')
                 const listOfStoriesResponse: Array<AxiosResponse> = await Promise.all(listOfIds.data.slice(page.start, page.end).map((id: unknown) => {
                     return axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`)
@@ -62,7 +61,6 @@ export const Home = () => {
         setStatus('loadmore')
     }
 
-    console.log()
     return (
         <Center>
             <MainTable>
