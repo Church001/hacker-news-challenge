@@ -57,6 +57,7 @@ export const Home = () => {
     }, [page, statusState, allowPageInc])
     
     const handleMore = () => {
+        if (statusState==='loading') return
         setAllowPageInc(true)
         setStatus('loadmore')
     }

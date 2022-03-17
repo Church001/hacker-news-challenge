@@ -46,6 +46,7 @@ const AnchorTag = styled.a`
     color: #000000;
     text-decoration: none;
     word-break: break-word;
+    cursor: pointer;
 `;
 
 const Logo = styled.img`

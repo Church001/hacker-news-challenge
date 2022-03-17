@@ -145,7 +145,7 @@ const SingleNews = ({ news: { by, id, score, time, title, kids=[], url: link="" 
                     <ScoreSpan title="2022-03-17T09:23:32">
                         <VisitedSubLinkAnchor  href="#">{_computeTime(time)}</VisitedSubLinkAnchor>
                     </ScoreSpan>{" "}
-                    <ScoreSpan title="2022-03-17T09:23:32">
+                    <ScoreSpan>
                     {" "}| <VisitedSubLinkAnchor  href="#">hide</VisitedSubLinkAnchor> | {" "}
                     </ScoreSpan>
                     <VisitedSubLinkAnchor  href="#">{`${kids.length} comments`}</VisitedSubLinkAnchor>
